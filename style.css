@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #11100f;
+  color: #f5efe6;
+  font-family: Georgia, serif;
+}
+
+nav {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+}
+
+nav a {
+  color: #c8a76a;
+  margin-left: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: 12px;
+}
+
+main p {
+  max-width: 450px;
+  margin: 22px 0 32px;
+  color: #d7cbb9;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+.menu-button {
+  border: 1px solid #c8a76a;
+  color: #f5efe6;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 15px 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#gallery {
+  background: #171513;
+  padding: 100px 9%;
+}
+
+.food-gallery {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  max-width: 1100px;
+}
+
+.food-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.food-gallery img {
+  display: block;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+  width: 100%;
+}
+
+.food-gallery figure:hover img {
+  transform: scale(1.05);
+}
+
+.food-gallery figcaption {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  bottom: 0;
+  color: #f5efe6;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 45px 18px 18px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+}
+
+#menu {
+  background: #1b1917;
+  padding: 100px 9%;
+}
+
+.small-title {
+  color: #c8a76a;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin: 12px 0 55px;
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 45px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: auto;
+  max-width: 950px;
+}
+
+.menu-category h3 {
+  color: #c8a76a;
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0 0 18px;
+}
+
+.menu-category p {
+  border-bottom: 1px solid #3c3833;
+  color: #f5efe6;
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.menu-category span {
+  color: #d7cbb9;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  nav {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 9px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  #menu {
+    padding: 80px 30px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .food-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+#contact {
+  background: #11100f;
+  padding: 100px 30px;
+  text-align: center;
+}
+
+#contact p {
+  color: #d7cbb9;
+  font-family: Arial, sans-serif;
+  margin: 18px 0 28px;
+}
+
+.phone-number {
+  color: #c8a76a !important;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#contact::after {
+  color: #d7cbb9;
+  content: "Open daily · 8:00 AM – 7:00 PM";
+  display: block;
+  font-family: Arial, sans-serif;
+  margin-top: 28px;
+}
